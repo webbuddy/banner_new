@@ -1,0 +1,14 @@
+banner_content.html
+
+
+
+This adds a backgrounded text message which provides the opportunity for displaying 
+the date of the next upcoming Sunday, based on the current date.
+
+Add this code to new.phtml from about line 31
+/home/USER/public_html/app/design/frontend/PACKAGE/THEME/template/catalog/product/new.phtml
+and you can use it as part of a message with an end date for new products on sale at the top of new.phtml
+Add it undeneath a banner and can be matched in background colour to appear as part of the banner.
+Refresh cache to ensure changes are visible
+
+
