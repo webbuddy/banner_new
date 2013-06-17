@@ -1,0 +1,37 @@
+    <div class="category-head-special">
+        <style type="text/css">
+#sale_end_date
+     {
+     font-family:Arial,Helvetica,sans-serif;
+     color:#000000;
+     font-size:1.5em;
+     font-weight:bold;
+     line-height:1.3em;
+     margin:0;
+     max-width:100%;
+     overflow:hidden;
+     padding:5px 0px 4px 10px;
+     text-transform:lowercase;
+     }    
+</style>
+<script type="text/javascript">
+
+          function init(){
+
+          var mnth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+          var now=new Date();
+          var later=new Date(now.getUTCFullYear(),now.getUTCMonth(),now.getDate()+(7-now.getDay()));
+          var yy=later.getUTCFullYear();
+          var mm=mnth[later.getUTCMonth()];
+          var dd=later.getDate();
+
+          document.getElementById('sale_end_date').firstChild.nodeValue='sale ends sun'+' '+dd+' '+mm;
+          }
+
+          window.addEventListener?
+          window.addEventListener('load',init,false):
+          window.attachEvent('onload',init);
+
+</script>
+          <div id="sale_end_date">&nbsp;</div>
+    </div>

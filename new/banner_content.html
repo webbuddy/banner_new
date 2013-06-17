@@ -1,0 +1,56 @@
+<style type="text/css">
+div.special_banner_bckgd
+{
+width:750px;
+height:75px;
+background-image:url('http://www.pineshop.com.au/media/easybanner/special_buys_this_week_now.jpg');
+}
+div.special_date
+{
+font-family:Arial,helvetica,sans-serif;
+color: white;
+float:right;
+padding-top:8px;
+padding-right:8px;
+font-family:Arial,helvetica,sans-serif;
+font-size: 2em;
+font-weight: bold;
+text-align:center;
+line-height:100%;
+}
+a:link
+{
+text-decoration:none;
+}
+#saturday-next {
+    text-align:center;
+     color: white;
+     text-transform:lowercase;
+}
+</style>
+<a href="http://www.pineshop.com.au/special-buys">
+<div class="special_banner_bckgd">
+<div class="special_date">
+sale ends
+</br>
+<script type="text/javascript">
+
+function init(){
+
+   var mnth=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+   var now=new Date();
+   var later=new Date(now.getUTCFullYear(),now.getUTCMonth(),now.getDate()+(7-now.getDay()));
+   var yy=later.getUTCFullYear();
+   var mm=mnth[later.getUTCMonth()];
+   var dd=later.getDate();
+
+   document.getElementById('saturday-next').firstChild.nodeValue='sun'+' '+dd+' '+mm;
+}
+
+   window.addEventListener?
+   window.addEventListener('load',init,false):
+   window.attachEvent('onload',init);
+
+</script>
+<div id="saturday-next">&nbsp;</div>
+</div></div></a>
