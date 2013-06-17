@@ -1,6 +1,14 @@
+Two Javascript snippets to generate a future date for a given weekday calculated off current date
+
+
 banner_content.html
 
+This code goes into Content of Banner and will generate a future date 7 days from date now.
+Ideal for end dates of sales
 
+
+
+banner_new.phtml
 
 This adds a backgrounded text message which provides the opportunity for displaying 
 the date of the next upcoming Sunday, based on the current date.
@@ -10,5 +18,3 @@ Add this code to new.phtml from about line 31
 and you can use it as part of a message with an end date for new products on sale at the top of new.phtml
 Add it undeneath a banner and can be matched in background colour to appear as part of the banner.
 Refresh cache to ensure changes are visible
-
-
